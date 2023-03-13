@@ -1,0 +1,19 @@
+Fonctionnement :
+
+Dans l’exercice 3 vous allez devoir faire 1 choix entre 2 propositions,
+soit calculer la somme des puissances consécutives avec une seule valeur,
+soit calculer la somme avec une plage de valeur (à condition que la valeur
+minimale soit plus petite que la valeur maximale de la borne). Par la suite,
+on va devoir calculer le nombre de chiffres du nombre, et ensuite les
+replacer dans l’ordre croissant. Pour finir on calcule la somme des
+puissances consécutives pour les comparer au chiffre de base et ainsi
+savoir si le nombre est égal a ses puissances consécutives.
+
+Difficultés :
+
+La difficulté principale était de replacer les chiffres dans l’ordre
+croissant, nous avons testé de plusieurs façons d’effectuer le
+remplacement dans l’ordre : le faire de manière décroissante, comparer les
+chiffres entre eux… mais cela devenait trop complexe. En solution, nous
+avons décidé de comparer le chiffre de 0 à 9, qui permet de les replacer
+dans l'ordre croissant

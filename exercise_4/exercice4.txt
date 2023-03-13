@@ -1,0 +1,30 @@
+Fonctionnement :
+
+Le but de l’exercice 4 est de convertir le chiffre donné par l’utilisateur,
+puis de compter le nombre de 0 avant le premier bit à 1, et le nombre de 0
+avant le dernier bit à 1. Premièrement pour effectuer la conversion, nous
+faisons un modulo afin d’avoir le reste, soit 1 ou 0, puis après avoir obtenu le
+résultat, on inverse le chiffre donné pour l’avoir dans le bon sens (car le
+calcul commence “à l’envers”). Après ça, on compare le nombre de chiffres
+de notre variable, et selon le nombre de bit on le retire de 8, 16, 24, 32 bits,
+pour obtenir le nombre de 0 avant le premier 1. Ensuite on compte le
+nombre de 0 avant le dernier bit à 1.
+
+Difficultés :
+
+Le plus compliqué était lors du dépassement de chiffres du type (ici
+long long soit 20 chiffres max), la conversion se faisait mais quand ça
+dépasse, cela donne un chiffre au hasard différent de la conversion faite.
+Une difficultée rencontrée était aussi le fait de compter les 0 avant le
+dernier bit à 1. En solution, nous avons créé une 2ème variable qui stockera
+une partie de la conversion binaire, puis nous relions les deux à l’affichage.
+Ensuite, pour le deuxième problème, nous avons commencé de là fin du
+
+chiffre et du 1er 1 apparaissant pour obtenir le nombre de 0 avant (ex :
+101000, je commence à partir du 1er 1 en partant de la droit vers la gauche)
+Nous avions envoyé un mail pour demander si les opérateurs tel que
+< <= > était interdit, mais due à une réponse le jour du rendu nous n’avons
+pas eu le temps de changer notre code, puis nous ne savions pas
+comment faire car dans le site que nous avons regardé, interdire < <= >
+était aussi interdire % / (le lien du site :
+https://learn.microsoft.com/fr-fr/cpp/cpp/binary-operators?view=msvc-170)

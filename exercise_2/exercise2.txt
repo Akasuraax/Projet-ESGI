@@ -1,0 +1,25 @@
+Fonctionnement :
+
+Dans l’exercice 2 vous allez devoir d’abord saisir un nombre N puis un
+nombre M, le but de l’exercice est de rechercher le nombre M dans N. Par
+la suite on va devoir décomposer le nombre N en fonction du nombre de
+chiffre contenu dan M (par exemple si on a N = 1234 M = 12, n sera
+décomposé en 12 23 34, si j’ai n = 1234 m = 123, n sera décomposé en 123
+234, etc..). Ensuite nous allons comparer notre N décomposé à notre M ce
+qui va faire N = 1234, M = 23, je retrouve M dans 1234, ainsi je le retire de n.
+Comparaison finale = 1004). Pour finir on compare les chiffres de final a n
+lorsque les chiffres sont communs, je le garde dans une variable (ces
+chiffres correspondent à ceux qui ne sont pas recherchés par M)
+
+Difficultés :
+
+Nous voulions à la base retirer le m recherché dans n dans la boucle
+directement, mais cela ne marchait que pour quelques cas, il fallait donc
+chercher une autre manière de garder le reste. Ensuite nous avons testé,
+quand on trouvait le nombre m, on passait le nombre (ex: n = 1234, m = 23,
+quand je tombe sur 23, je passe à 4), mais cela était trop complexe. Enfin,
+pouvoir obtenir les nombres décomposés selon le nombre de chiffres de
+m, au début quand on avait un m à 3 chiffres, ça ne fonctionnait pas car le
+cas ne marchait que pour 2 chiffres. Ainsi, en solution, pour avoir les chiffres
+restants, nous avons fait la comparaison de chaque chiffre au nombre dans
+lequel on a retiré les m.
